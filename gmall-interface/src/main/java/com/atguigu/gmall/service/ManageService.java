@@ -34,5 +34,32 @@ public interface ManageService {
      */
     public void saveSpuInfo(SpuInfo spuInfo);
 
+    /**
+     * 通过spuId
+     * @param spuId
+     * @return
+     */
 
+    List<SpuImage> getSpuImageList(String spuId);
+
+    List<SpuSaleAttr> getSpuSaleAttrList(String spuId);
+
+    void saveSkuInfo(SkuInfo skuInfo);
+
+    SpuInfo getSpuInfo(String skuId);
+
+    SkuInfo getSkuInfo(String skuId);
+
+    List<SkuImage> getSkuImageList(String skuId);
+
+    List<SpuSaleAttr> getSpuSaleAttrListCheckBySku(SkuInfo skuInfo);
+
+    /**
+     * 获取SkuSaleAttrValue对象
+     * @param spuId
+     * @return
+     */
+    List<SkuSaleAttrValue> getSkuSaleAttrValueListBySpu(String spuId);
+
+    List<BaseAttrInfo> getAttrList(List<String> attrValueIdList);
 }

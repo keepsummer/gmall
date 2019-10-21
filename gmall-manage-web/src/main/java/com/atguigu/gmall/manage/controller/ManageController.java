@@ -47,6 +47,7 @@ public class ManageController {
     }
 
     /**
+     *   // http://localhost:8082/attrInfoList?catalog3Id=61
      * 获取所有的平台属性名称
      * @param catalog3Id
      * @return
@@ -80,5 +81,10 @@ public class ManageController {
     public List<SpuInfo> getSpuInfoList(SpuInfo spuInfo){
         return manageService.getSpuInfoList(spuInfo);
     }
+
+
+
+
+
 
 }
